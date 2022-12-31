@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Challenge 1</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/logoTop.svg" alt="Logo Alura">
+  </header>
+  <main class="container">
+      <div class="input">
+        <textarea placeholder="Ingrese el texto aquí" id="input"></textarea>
+        <div class="info" id="info">
+          <img src="/img/infoicon.svg" alt="logo Informacion">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button class="buttonA" onclick="encryptText()">Encriptar</button>
+          <button class="buttonB" onclick="uncryptText()">Desencriptar</button>
+        </div>
+      </div>
+      <div class="output">
+        <div id="initial-output" class="initial-output">
+          <img src="img/outputLogoDesktop.svg" alt="Imagen Salida Escritorio">
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingrese el texto que desees encriptar o desencriptar</p>
+        </div>
+        <div class="final-output" id="final-output">
+          <p id="text"></p>
+          <div class="tooltip">
+            <button class="buttonCopy" onclick="copyText()">
+              <span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
+              Copiar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Creado en 2022 por: Farid Salamanca Oracle ONE ©
+    </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
